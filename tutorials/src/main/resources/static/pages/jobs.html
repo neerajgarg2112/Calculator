@@ -1,0 +1,13 @@
+<!-- home.html -->
+    <div class="jumbotron text-center" ng-show="myVar">
+        <h1>All jobs listing</h1>
+
+		<div ng-repeat="x in message">
+        <button type="button" class="btn btn-info"  ng-click="triggerJob(x)">Trigger {{x}}</button>
+        </div>
+        
+    </div>
+    <div ng-show="isJobTriggered" class="jumbotron text-center">
+    <button type="button" class="btn btn-info" ng-click="backJob(x)">Back</button>
+    Job triggered successfully 
+    </div>
